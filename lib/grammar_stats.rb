@@ -3,7 +3,7 @@ class GrammarStats
     @checks = []
   end
 
-  def check(text) # text is a string
+  def check(text)
     @checks.push text.match? /^[A-Z][\w\s]*[?.!]$/
     @checks[-1]
   end
